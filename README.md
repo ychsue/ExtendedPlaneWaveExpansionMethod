@@ -3,8 +3,16 @@ About its description which is written in English, you can check [this article](
 
 In this repository, it shows its codes which are written by Matlab. 
 
-And its concept has been explained in the file [oral1.ppt](oral1.ppt). Sorry, it was written in Traditional Chinese.
+And its concept has been explained in the first part of file [oral.ppt](oral.ppt). Sorry, it was written in Traditional Chinese and some words might be unreadable since I used something like [MathType](https://docs.wiris.com/en/mathtype/start) to type in the Math equations and might some characters belong to [Mathmatica](https://www.wolfram.com/mathematica/).
 
+Before you test this code, keep one thought in your mind: this is not a commercial App that is focused on what it can provide for the users through its UI part. 
+This code is used to realize the theories mentioned in the papers which are used by [oral](oral.ppt).
+The true value is inside those theories and this code is just used to help you have a deeper understanding of these theories.
+
+Therefore, I have to give a special thank to Prof. Gu since he introduce me these theories and even provide me a matlab code base to test on.
+From the part II and part III of that [oral](oral.ppt) are based on his idea, guiding, and teaching. Thanks to him.
+
+So, I should say: if without Prof. Gu's help and the people who share their thoughts, this code wouldn't be shown here. Thanks to all of them.
 # How to Use
 Basically, this code's main part is [ymode.m](ymode.m) which is based on the concept of EPWE.
 
@@ -26,7 +34,8 @@ The parameters that you can input are:   (它的欄位分別為)
 * \omega: The frequency. For `o2kr`, `o2ky` and `o2kyall` are just a number; however, it should be a range for `interface2omega` case. (所要畫的頻率，o2kr, o2ky, o2kyall 都是輸入一個值，而interface2omega則要輸入一個範圍。)
 
 * ky: The fixed `ky` for your calculation. ^_^ (即EPWE method 中要被固定的部份。)
-folder: Output folder for your calculation. (要將計算結果存在哪個目錄。)
+
+* folder: Output folder for your calculation. (要將計算結果存在哪個目錄。)
 
 If you want to know how functions related to each other, please execute `matlab/Editor/Tools/Show Dependency Report` to see its result.
 
@@ -47,7 +56,7 @@ You can run its Example shown in its comment. However, take care of some situati
 最後，再將該ky輸入給incident計算。)
 
 
-If you want to get some visual results like how your wave function looks like, or quiver, you can use execute the codes inside the subfolder ~wavefunction~.
+If you want to get some visual results like how your wave function looks like, or quiver, you can execute the codes inside the subfolder ~wavefunction~.
 (如果要看波函數的型態，或者是quiver，可以到subdirectory:: wavefunction 去看。
 請執行vvector來看。
 詳細的部份，請自行修改。)
